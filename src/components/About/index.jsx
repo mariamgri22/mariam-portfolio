@@ -9,7 +9,7 @@ export default function About() {
       <img className='image' src={imageMar}/>
       <div>
         <p>My Info</p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sit sint possimus nobis rem deserunt eius quisquam deleniti quaerat! Aliquid provident vel tenetur magnam eum iste consectetur voluptas, repellat ducimus.
+        My first laptop was made of a box of candies, the keyboard և screen of which was painted with markers, and the screen images changed very often, making my laptop look like a big, huge box.
       </div>
     </div>
 
