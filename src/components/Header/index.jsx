@@ -43,17 +43,6 @@ function Header() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
                 to="/contact"
                 activeClassName="active"
                 className="nav-links"
