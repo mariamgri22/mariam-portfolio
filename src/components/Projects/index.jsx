@@ -27,7 +27,7 @@ export default function Projects() {
  image={ship}
  name="BattleShip"
  technologies='React,Context,Javascript'
- view='React,Context,Javascript'
+ view='https://github.com/mariamgri22/Battleship-multiplayer'
  />
 </div>
     </>
