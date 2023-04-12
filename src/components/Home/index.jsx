@@ -80,24 +80,7 @@ const Hero = styled.section`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
-  }
-`;
-
-const Subtitle = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-`;
 
 const Button = styled.button`
   font-size: 1rem;
@@ -119,22 +102,7 @@ const Button = styled.button`
   }
 `;
 
-const About = styled.section`
-  margin-bottom: 2rem;
-`;
 
-const Heading = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 1rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-`;
-
-const Paragraph = styled.p`
-  font-size: 1.25rem;
-  line-height: 1.5;
-`;
 
 export default Home;

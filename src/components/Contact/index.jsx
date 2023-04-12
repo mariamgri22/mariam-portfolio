@@ -79,50 +79,11 @@ const IconLink = styled.a`
   }
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
-`;
 
-const Input = styled.input`
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 1rem;
 
-  &::placeholder {
-    color: #ccc;
-  }
-`;
 
-const Textarea = styled.textarea`
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 1rem;
-  resize: vertical;
-  min-height: 150px;
 
-  &::placeholder {
-    color: #ccc;
-  }
-`;
 
-const Button = styled.button`
-  padding: 1rem 2rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-`;
+
 
 export default Contact;
