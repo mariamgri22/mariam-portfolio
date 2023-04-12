@@ -1,4 +1,32 @@
-body{
-    background: #032c48; 
-    overflow: hidden;
+body {
+  font-family: "Nunito", sans-serif;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animateSkillItem {
+  0% {
+    border-color: #ff8b6b;
+    background-color: #ff5e5e;
+  }
+  50% {
+    border-color: #ff6b6b;
+    background-color: #ff4a4a;
+  }
+  100% {
+    border-color: #ff8b6b;
+    background-color: #ff5e5e;
+  }
+}
+
+/* Text shadow and gradient text */
