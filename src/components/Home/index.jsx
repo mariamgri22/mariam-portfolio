@@ -16,6 +16,7 @@ const Home = () => {
     <Gradient id="section1">
       <Container>
         <Hero>
+        <TextWrapper>
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
@@ -31,6 +32,7 @@ const Home = () => {
             repeat={Infinity}
             wrapper="span"
           />
+          </TextWrapper>
           <Button onClick={handleDownload}>
           Download my CV
           </Button>
@@ -101,7 +103,15 @@ const Button = styled.button`
     padding: 0.25rem 0.5rem;
   }
 `;
+const TextWrapper = styled.span`
+  white-space: pre-line;
+  display: block;
 
+  @media screen and (max-width: 768px) {
+    font-size: .3em;
+    line-height: 1.5;
+  }
+`;
 
 
 

@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <Nav isScrolled={isScrolled}>
+    <Nav showMenu={showMenu} isScrolled={isScrolled}>
       <Logo
         to="section1"
         isScrolled={isScrolled}
@@ -116,12 +116,17 @@ const Nav = styled.nav`
   background-color: transparent;
   position: fixed;
   background-color: ${({ isScrolled }) =>
-    isScrolled ? "#333" : "transparent"};
+    isScrolled ? "#fff" : "transparent"};
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   animation: gradient 15s ease infinite;
+
+  @media screen and (max-width: 768px) {
+    background-color: ${({ isScrolled }) =>
+      isScrolled ? "#fff" : "rgb(255, 74, 74)"};
+  }
 `;
 
 const Logo = styled(Link)`
@@ -129,7 +134,7 @@ const Logo = styled(Link)`
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  color: ${({ isScrolled }) => (isScrolled ? "#fff" : "#333")};
+  color: ${({ isScrolled }) => (isScrolled ? "#333" : "#fff")};
 `;
 
 const MenuButton = styled.button`
@@ -139,10 +144,11 @@ const MenuButton = styled.button`
   border: none;
   ${"" /* color: #fff; */}
   cursor: pointer;
-  color: ${({ isScrolled }) => (isScrolled ? "#fff" : "#333")};
 
   @media screen and (max-width: 768px) {
     display: block;
+    color: ${({ isScrolled }) => (isScrolled ? "#333" : "#fff")};
+    ${"" /* color: ${({ showMenu }) => (showMenu ? "#333" : "#fff")}; */}
   }
 `;
 
@@ -161,7 +167,7 @@ const MenuLinks = styled.ul`
     left: 0;
     width: 100%;
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: 4rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 `;
@@ -171,14 +177,14 @@ const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin: 0 1rem;
-  color: ${({ isScrolled }) => (isScrolled ? "#fff" : "#333")};
+  color: ${({ isScrolled }) => (isScrolled ? "#333" : "#fff")};
   &:hover {
     color: #ff6b6b;
     cursor: pointer;
   }
 
   @media screen and (max-width: 768px) {
-    margin: 0.5rem 0;
+    margin: 0.5rem 2rem;
     color: ${({ isScrolled }) => (isScrolled ? "#333" : "#333")};
   }
 `;
